@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Local runtime data
+/data/*.jsonl
+/data/review_table.json
+/data/reminders.json
+/data/todos.json
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/

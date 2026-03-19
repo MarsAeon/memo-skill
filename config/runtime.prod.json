@@ -1,0 +1,8 @@
+{
+  "timezone": "Asia/Shanghai",
+  "scan_interval_seconds": 60,
+  "max_scan_batch": 500,
+  "retry_delay_seconds": 60,
+  "max_delivery_attempts": 3,
+  "data_dir": "data"
+}

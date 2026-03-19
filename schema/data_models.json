@@ -1,0 +1,49 @@
+{
+  "memo": {
+    "id": "uuid",
+    "content": "string",
+    "category": "LEARNING|WORK|TODO|LIFE",
+    "tags": ["string"],
+    "created_at": "ISO8601",
+    "updated_at": "ISO8601"
+  },
+  "reminder": {
+    "id": "uuid",
+    "type": "ONCE|DAILY",
+    "message": "string",
+    "timezone": "IANA timezone",
+    "trigger_time": "ISO8601 for ONCE, HH:mm for DAILY",
+    "next_fire": "ISO8601",
+    "status": "SCHEDULED|PENDING_NOTIFY|FIRED|FAILED|CANCELLED",
+    "created_at": "ISO8601",
+    "last_fired_at": "ISO8601|null",
+    "dedupe_key": "string",
+    "delivery_attempts": "integer",
+    "next_retry": "ISO8601|null",
+    "last_delivery_error": "string|null",
+    "last_claimed_at": "ISO8601|null"
+  },
+  "todo": {
+    "id": "uuid",
+    "memo_id": "uuid",
+    "status": "PENDING|DONE",
+    "created_at": "ISO8601",
+    "completed_at": "ISO8601|null"
+  },
+  "review_log": {
+    "id": "uuid",
+    "memo_id": "uuid",
+    "stage": "R1|R2|R3|R4|R5|R6",
+    "reviewed_at": "ISO8601"
+  },
+  "review_table_row": {
+    "review_date": "YYYY-MM-DD",
+    "stage": "R1|R2|R3|R4|R5|R6",
+    "interval_days": "1|2|4|7|15|30",
+    "status": "UPCOMING|DUE|OVERDUE|DONE",
+    "memo_id": "uuid",
+    "memo_created_date": "YYYY-MM-DD",
+    "content": "string",
+    "reviewed_at": "ISO8601|null"
+  }
+}
